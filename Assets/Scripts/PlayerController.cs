@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
 
     public float moveSpeed;
     public float xMin, xMax, yMin, yMax;
+	public float autoMove;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,6 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        body2d.velocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed);
+        body2d.velocity = new Vector2(autoMove + horizontal * moveSpeed, vertical * moveSpeed);
     }
 }
