@@ -22,7 +22,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
+// using mathf.abs is a mistake... need to made <0 numbers = 0 with if... but if's SUCK!
+        if (Input.GetAxisRaw("Horizontal")>=0)
+	{
+		horizontal = Input.GetAxisRaw("Horizontal");
+		horizontal = Mathf.Abs(Input.GetAxisRaw("Horizontal")/2);
+	};
+	
         vertical = Input.GetAxisRaw("Vertical");
 
         //create boundries
