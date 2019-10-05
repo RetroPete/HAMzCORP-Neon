@@ -329,7 +329,7 @@ Transform:
   - {fileID: 651320481}
   - {fileID: 1890955487}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &129982044
 MonoBehaviour:
@@ -395,7 +395,7 @@ Transform:
   - {fileID: 1581494040}
   - {fileID: 2124795987}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &651320480
 GameObject:
@@ -589,7 +589,7 @@ Transform:
   - {fileID: 1968425453}
   - {fileID: 16799664}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1370279669
 MonoBehaviour:
@@ -777,9 +777,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1489636043}
   - component: {fileID: 1489636042}
+  - component: {fileID: 1489636045}
+  - component: {fileID: 1489636044}
   m_Layer: 0
-  m_Name: obstickle
-  m_TagString: Respawn
+  m_Name: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -841,12 +843,46 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1489636041}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1489636044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489636041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a00e62094194a4b498b93edb7deb8e57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+--- !u!50 &1489636045
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489636041}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &1581494039
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,7 +976,6 @@ GameObject:
   - component: {fileID: 1596993107}
   - component: {fileID: 1596993111}
   - component: {fileID: 1596993106}
-  - component: {fileID: 1596993110}
   m_Layer: 0
   m_Name: Zeus
   m_TagString: Player
@@ -961,10 +996,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  xMin: 0
-  xMax: 1000
-  yMin: -4.8
-  yMax: 4.5
   autoMove: 1
 --- !u!50 &1596993107
 Rigidbody2D:
@@ -1050,22 +1081,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1596993110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596993105}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f582b6f93f6bc9b479f55afe36c9a8e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  body2d: {fileID: 0}
-  horizontal: 0
-  vertical: 0
-  moveSpeed: 4
 --- !u!61 &1596993111
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1297,7 +1312,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1968425452
 GameObject:
