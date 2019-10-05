@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
 
     public float moveSpeed;
     public float xMin, xMax, yMin, yMax;
+	public float autoMove;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
+// using mathf.abs is a mistake... need to made <0 numbers = 0 with if... but if's SUCK!
+        if (Input.GetAxisRaw("Horizontal")>0)
+	{
+		horizontal = 0;
+		horizontal = Input.GetAxisRaw("Horizontal");
+	};
+	
         vertical = Input.GetAxisRaw("Vertical");
 
         //create boundries
@@ -32,6 +39,6 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        body2d.velocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed);
+        body2d.velocity = new Vector2(autoMove + horizontal * moveSpeed, vertical * moveSpeed);
     }
 }
