@@ -22,8 +22,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-// using mathf.abs is a mistake... need to made <0 numbers = 0 with if... but if's SUCK!
-        if (Input.GetAxisRaw("Horizontal")>0)
+        if (Input.GetAxisRaw("Horizontal")>=0)
 	{
 		horizontal = 0;
 		horizontal = Input.GetAxisRaw("Horizontal");
