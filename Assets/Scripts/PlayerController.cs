@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     float vertical;
 
     public float moveSpeed;
-    public float xMin, xMax, yMin, yMax;
 	public float autoMove;
 
     // Start is called before the first frame update
@@ -26,14 +25,14 @@ public class PlayerController : MonoBehaviour
 	{
 		horizontal = 0;
 		horizontal = Input.GetAxisRaw("Horizontal");
-	};
 	
         vertical = Input.GetAxisRaw("Vertical");
+	};
 
-        //create boundries
-        body2d.position = new Vector2(
-            Mathf.Clamp(body2d.position.x, xMin, xMax),
-            Mathf.Clamp(body2d.position.y, yMin, yMax));
+        Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
+        pos.x = Mathf.Clamp01(pos.x);
+        pos.y = Mathf.Clamp01(pos.y);
+        transform.position = Camera.main.ViewportToWorldPoint(pos);
     }
 
     void FixedUpdate()
