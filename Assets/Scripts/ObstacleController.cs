@@ -5,6 +5,7 @@ using UnityEngine;
 public class ObstacleController : MonoBehaviour
 {
   public float speed = 1.0f;
+  public float destroyTime = 10.0f;
     private Rigidbody2D rb;
     private Vector2 screenBounds;
 
@@ -16,6 +17,6 @@ public class ObstacleController : MonoBehaviour
     }
     // Update is called once per frame
    void Update () {
-         Destroy(this.gameObject,10.0f);	
+         Destroy(GameObject.Find("Obstacle(Clone)"),destroyTime);	
 		}
     }
