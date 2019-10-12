@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class DeployObstacle : MonoBehaviour
 {
-  public GameObject obstaclePrefab;
-    public float respawnTime = 10.0f;
-    private Vector2 cameraBounds;
+	public GameObject obstaclePrefab;
+    public float respawnTime = 1.0f;
+	public GameObject player;
+	private Vector3 offset;
 
-    // Use this for initialization
     void Start () {
-		//need to find camera bounds here...
-        cameraBounds = Camera.main.WorldToScreenPoint(new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, Camera.main.transform.position.z));
+		offset = transform.position - player.transform.position;
         StartCoroutine(asteroidWave());
     }
     private void spawnEnemy(){
         GameObject a = Instantiate(obstaclePrefab) as GameObject;
-        a.transform.position = new Vector2(cameraBounds.x * -2, Random.Range(-cameraBounds.y, cameraBounds.y));
+        a.transform.position = new Vector3(20 + player.transform.position.x + offset.x, Random.Range(-3.5f,3.5f), offset.z);
     }
     IEnumerator asteroidWave(){
         while(true){
