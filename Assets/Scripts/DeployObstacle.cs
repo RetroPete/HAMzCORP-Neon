@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DeployObstacle : MonoBehaviour
 {
-  public GameObject obstaclePrefab;
+	public GameObject obstaclePrefab;
     public float respawnTime = 1.0f;
 	public GameObject player;
 	private Vector3 offset;

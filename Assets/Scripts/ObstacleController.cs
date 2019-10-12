@@ -14,7 +14,6 @@ public class ObstacleController : MonoBehaviour
     void Start () {
         rb = this.GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(-speed, 0);
-        //PlayerPos = new Vector2(player.transform.position.x,player.transform.position.y);
 		
     }
 
