@@ -15,7 +15,7 @@ public class DeployObstacle : MonoBehaviour
     }
     private void spawnEnemy(){
         GameObject a = Instantiate(obstaclePrefab) as GameObject;
-        a.transform.position = new Vector3(20 + player.transform.position.x + offset.x, offset.y, offset.z);
+        a.transform.position = new Vector3(20 + player.transform.position.x + offset.x, Random.Range(-3.5f,3.5f), offset.z);
     }
     IEnumerator asteroidWave(){
         while(true){

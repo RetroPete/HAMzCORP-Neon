@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 2796949805141936727}
   - component: {fileID: 2796949805141936726}
   - component: {fileID: 2796949805141936721}
-  - component: {fileID: 2796949805141936720}
+  - component: {fileID: 8209632604731255773}
   m_Layer: 0
   m_Name: Obstacle
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,17 +103,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2796949805141936720
+--- !u!114 &8209632604731255773
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2796949805141936725}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a00e62094194a4b498b93edb7deb8e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  player: {fileID: 0}
+  destroyTime: 10
