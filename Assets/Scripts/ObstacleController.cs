@@ -8,8 +8,6 @@ public class ObstacleController : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 screenBounds;
 
-
-    // Use this for initialization
     void Start () {
         rb = this.GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(-speed, 0);

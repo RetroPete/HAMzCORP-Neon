@@ -9,7 +9,6 @@ public class DeployObstacle : MonoBehaviour
 	public GameObject player;
 	private Vector3 offset;
 
-    // Use this for initialization
     void Start () {
 		offset = transform.position - player.transform.position;
         StartCoroutine(asteroidWave());
