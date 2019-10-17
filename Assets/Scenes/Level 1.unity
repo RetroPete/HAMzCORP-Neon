@@ -778,9 +778,10 @@ GameObject:
   - component: {fileID: 1489636043}
   - component: {fileID: 1489636042}
   - component: {fileID: 1489636045}
+  - component: {fileID: 1489636046}
   - component: {fileID: 1489636044}
   m_Layer: 0
-  m_Name: Obstacle
+  m_Name: Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -824,7 +825,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 4b54547c03fccf64581da6531a709cc5, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -832,7 +833,7 @@ SpriteRenderer:
   m_Size: {x: 0.76, y: 2.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1489636043
@@ -858,10 +859,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1489636041}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a00e62094194a4b498b93edb7deb8e57, type: 3}
+  m_Script: {fileID: 11500000, guid: ddbf0dc8cdd72f74bb437d700943ce5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 1
+  destroyTime: 6.5
 --- !u!50 &1489636045
 Rigidbody2D:
   serializedVersion: 4
@@ -883,6 +885,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &1489636046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489636041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6ee1015a708c47afae9c56a6a5032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beamPrefab: {fileID: 3143458490716249371, guid: 0d3ddcec67e111e40963937ac96445eb,
+    type: 3}
+  beamSprites:
+  - {fileID: 21300000, guid: 2ca64403a15477247a46b9eb1c3423e2, type: 3}
+  - {fileID: 21300000, guid: e7a2ea0466b8ceb418e64cfa1dbede68, type: 3}
+  - {fileID: 21300000, guid: dcf912ccd55101843997d31417bdc59d, type: 3}
+  - {fileID: 21300000, guid: 0eff4a4e01964bc4ead66d52d08835a4, type: 3}
+  respawnTime: 3
+  player: {fileID: 1596993105}
 --- !u!1 &1581494039
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,8 +1018,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad82917a11c1a764da1761b3b08543b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  autoMove: 1
+  moveSpeed: 7
+  autoMove: 5
 --- !u!50 &1596993107
 Rigidbody2D:
   serializedVersion: 4
@@ -1098,7 +1121,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.5, y: 3.5}
+    oldSize: {x: 2.2, y: 0.9}
     newSize: {x: 3.5, y: 3.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
