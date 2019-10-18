@@ -5,7 +5,7 @@ using UnityEngine;
 public class BeamController : MonoBehaviour
 {
 	public float speed = 1.0f;
-	public float destroyTime = 6.5f;
+	public float destroyTime = 6f;
     private Rigidbody2D rb;
     private Vector2 screenBounds;
 	
@@ -17,8 +17,8 @@ public class BeamController : MonoBehaviour
     }
 
     // Update is called once per frame
-   void Update () 
+    void Update () 
     {
-        Destroy(GameObject.Find("Beam(Clone)"),destroyTime);	
+        Destroy(GameObject.Find("Beam(Clone)"), destroyTime);	
 	}
 }	
