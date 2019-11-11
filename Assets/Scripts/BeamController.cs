@@ -8,6 +8,7 @@ public class BeamController : MonoBehaviour
 	public float destroyTime = 6f;
     private Rigidbody2D rb;
     private Vector2 screenBounds;
+	public GameObject beam; // This is where you reference the beam you want to destroy
 	
 	void Start () 
 	{
@@ -21,4 +22,12 @@ public class BeamController : MonoBehaviour
     {
         Destroy(GameObject.Find("Beam(Clone)"), destroyTime);	
 	}
-}	
+	
+	//void OnTriggerEnter2D(Collider2D other)
+	//{
+		//if(other.tag == "Player")
+		//{
+			//Destroy(GameObject.Find("Beam(Clone)"));
+		//}
+	//}
+}
