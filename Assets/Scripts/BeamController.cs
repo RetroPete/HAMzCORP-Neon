@@ -20,7 +20,7 @@ public class BeamController : MonoBehaviour
     // Update is called once per frame
     void Update () 
     {
-        Destroy(GameObject.Find("Beam(Clone)"), destroyTime);	
+        Destroy(GameObject.Find("Beam(Clone)"), destroyTime);		
 	}
 	
 	//void OnTriggerEnter2D(Collider2D other)

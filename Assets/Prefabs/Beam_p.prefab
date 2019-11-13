@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: -8864567183063820035}
   - component: {fileID: 4982019070112296308}
   m_Layer: 0
-  m_Name: beam_p
-  m_TagString: Respawn
+  m_Name: Beam_p
+  m_TagString: Beam
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

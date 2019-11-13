@@ -905,7 +905,7 @@ MonoBehaviour:
   - {fileID: 7183734535640481133, guid: 784d6a57c3751cf41a397e8218005c20, type: 3}
   - {fileID: 1240988687017877626, guid: 5b035fa65d525d846bf478c0031eafe8, type: 3}
   beams: []
-  respawnTime: 4
+  respawnTime: 1
   player: {fileID: 1596993105}
 --- !u!61 &1489636047
 BoxCollider2D:
@@ -1262,7 +1262,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1919398840}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5f54fab70c1a86a46a544e856425d9d1, type: 3}
