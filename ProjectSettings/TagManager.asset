@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Beam
+  - Beam_b
+  - Beam_g
+  - Beam_p
+  - Beam_r
   layers:
   - Default
   - TransparentFX

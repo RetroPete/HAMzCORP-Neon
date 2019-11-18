@@ -44,11 +44,11 @@ public class PlayerController : MonoBehaviour
         body2d.velocity = new Vector2(autoMove + horizontal * moveSpeed, vertical * moveSpeed);
     }
 	
-	//void OnTriggerEnter2D(Collider2D other)
-	//{
-		//if(other.tag == "Respawn")
-		//{
-			//Destroy(player);
-		//}
-	//}
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if(other.tag == "Beam_p")
+		{
+			Application.LoadLevel("Level_1");
+		}
+	}
 }

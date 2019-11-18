@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -5361602919618581052}
   m_Layer: 0
   m_Name: Beam_g
-  m_TagString: Beam
+  m_TagString: Beam_g
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
