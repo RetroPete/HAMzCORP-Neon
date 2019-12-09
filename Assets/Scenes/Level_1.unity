@@ -505,7 +505,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrolling: 1
   paralax: 1
-  backgroundSize: 8.5
+  backgroundSize: 7
   paralaxSpeed: -0.4
 --- !u!1 &393477529
 GameObject:
@@ -698,7 +698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrolling: 1
   paralax: 1
-  backgroundSize: 8.5
+  backgroundSize: 7
   paralaxSpeed: -0.8
 --- !u!4 &414375127
 Transform:
@@ -828,7 +828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrolling: 1
   paralax: 1
-  backgroundSize: 8.5
+  backgroundSize: 7
   paralaxSpeed: -0.6
 --- !u!4 &569118451
 Transform:
@@ -878,7 +878,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrolling: 1
   paralax: 1
-  backgroundSize: 8.5
+  backgroundSize: 7
   paralaxSpeed: -0.7
 --- !u!4 &577017222
 Transform:
@@ -1083,7 +1083,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919804240}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2449999, y: -0.148, z: 0}
+  m_LocalPosition: {x: 0.6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1596993109}
@@ -1113,7 +1113,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5}
+  m_Size: {x: 0.4, y: 0.4}
   m_EdgeRadius: 0
 --- !u!212 &919804243
 SpriteRenderer:
@@ -1372,7 +1372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrolling: 1
   paralax: 1
-  backgroundSize: 8.5
+  backgroundSize: 7
   paralaxSpeed: -0.5
 --- !u!1 &1412407217
 GameObject:
@@ -1592,13 +1592,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.2, y: 1.6}
+  m_Size: {x: 0.1, y: 0.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -1631,7 +1631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  destroyTime: 6
+  destroyTime: 8
   beam: {fileID: 1489636041}
 --- !u!50 &1489636045
 Rigidbody2D:
@@ -1691,14 +1691,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 1.6}
-    newSize: {x: 0.2, y: 1.6}
+    oldSize: {x: 0.1, y: 0.8}
+    newSize: {x: 0.1, y: 0.8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 2}
+  m_Size: {x: 0.2, y: 0.8}
   m_EdgeRadius: 0
 --- !u!1 &1552217178
 GameObject:
@@ -1892,7 +1892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad82917a11c1a764da1761b3b08543b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 3
   autoMove: 2
   player: {fileID: 1596993105}
 --- !u!50 &1596993107
@@ -1953,13 +1953,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 5442ca735aa3906449c4fca6e32a446f, type: 3}
+  m_SortingOrder: 6
+  m_Sprite: {fileID: 21300000, guid: 3c886b9ff9f12a04faa0af1bdd46db8f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.5, y: 3.5}
+  m_Size: {x: 1.1, y: 0.45}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1974,7 +1974,7 @@ Transform:
   m_GameObject: {fileID: 1596993105}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4, y: 0, z: 0}
-  m_LocalScale: {x: 0.301, y: 0.573, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 919804241}
   m_Father: {fileID: 0}
@@ -1993,18 +1993,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1, y: 0.2}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.2, y: 0.9}
-    newSize: {x: 3.5, y: 3.5}
+    oldSize: {x: 1.1, y: 0.45}
+    newSize: {x: 1.1, y: 0.45}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 0.8}
+  m_Size: {x: 1, y: 0.5}
   m_EdgeRadius: 0
 --- !u!1 &1638410885
 GameObject:
@@ -2197,7 +2197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrolling: 1
   paralax: 1
-  backgroundSize: 8.5
+  backgroundSize: 7
   paralaxSpeed: -0.9
 --- !u!4 &1734321755
 Transform:
@@ -2407,7 +2407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrolling: 1
   paralax: 1
-  backgroundSize: 8.5
+  backgroundSize: 7
   paralaxSpeed: -3
 --- !u!4 &1914914126
 Transform:
