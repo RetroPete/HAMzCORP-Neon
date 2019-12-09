@@ -24,14 +24,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		
         if (Input.GetAxisRaw("Horizontal")>=0)
 		{
 		horizontal = 0;
 		horizontal = Input.GetAxisRaw("Horizontal");
 	
         vertical = Input.GetAxisRaw("Vertical");
-		};
+		}
 
         Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
         pos.x = Mathf.Clamp01(pos.x);
@@ -46,9 +45,24 @@ public class PlayerController : MonoBehaviour
 	
 	void OnTriggerEnter2D(Collider2D other)
 	{
+		if(other.tag == "Beam_b")
+		{
+			//Application.LoadLevel("Level_1");
+		}
+		
+		if(other.tag == "Beam_g")
+		{
+			//Application.LoadLevel("Level_1");
+		}
+		
 		if(other.tag == "Beam_p")
 		{
-			Application.LoadLevel("Level_1");
+			//Application.LoadLevel("Level_1");
+		}
+		
+		if(other.tag == "Beam_r")
+		{
+			//Application.LoadLevel("Level_1");
 		}
 	}
 }

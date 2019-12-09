@@ -19,8 +19,8 @@ public class SpawnBeam : MonoBehaviour
     private void spawnEnemy()
 	{
 		beams = new GameObject[beamPrefabs.Length];
-        
-		int i = Random.Range (0, beamPrefabs.Length);
+		
+        int i = Random.Range (0, beamPrefabs.Length);
         {
 			beams[i] = Instantiate(beamPrefabs[i]) as GameObject;
 			beams[i].transform.position = new Vector3(10 + player.transform.position.x + offset.x, Random.Range(-1.5f,1.5f), offset.z);

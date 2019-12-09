@@ -1068,9 +1068,10 @@ GameObject:
   - component: {fileID: 919804241}
   - component: {fileID: 919804243}
   - component: {fileID: 919804242}
+  - component: {fileID: 919804244}
   m_Layer: 0
   m_Name: shield
-  m_TagString: Untagged
+  m_TagString: Shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1083,7 +1084,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919804240}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.6, y: 0, z: 0}
+  m_LocalPosition: {x: 0.7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1596993109}
@@ -1164,6 +1165,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &919804244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919804240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32a3dd1c0104c04d95610a688c7b578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 1596993105}
+  shield: {fileID: 919804240}
+  shield_b: {fileID: 21300000, guid: b99a1b21fff67c54581a18af4d7b4411, type: 3}
+  shield_g: {fileID: 21300000, guid: 2c87c5cad14f6d44289380b3f43fb2e9, type: 3}
+  shield_p: {fileID: 21300000, guid: 43329df4044480b4088096acf2eaa5fc, type: 3}
+  shield_r: {fileID: 21300000, guid: bdb98638ab6d9594abac59ae7dbca179, type: 3}
 --- !u!1 &1138083498
 GameObject:
   m_ObjectHideFlags: 0
@@ -2004,7 +2023,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.5}
+  m_Size: {x: 1, y: 0.4}
   m_EdgeRadius: 0
 --- !u!1 &1638410885
 GameObject:

@@ -9,6 +9,7 @@ TagManager:
   - Beam_g
   - Beam_p
   - Beam_r
+  - Shield
   layers:
   - Default
   - TransparentFX

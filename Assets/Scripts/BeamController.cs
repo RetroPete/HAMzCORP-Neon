@@ -28,14 +28,12 @@ public class BeamController : MonoBehaviour
 	
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.tag == "Player")
+		if(other.tag == "Shield")
 		{
 			Destroy(GameObject.Find("Beam_b(Clone)"));
 			Destroy(GameObject.Find("Beam_g(Clone)"));
-			//Destroy(GameObject.Find("Beam_p(Clone)"));
+			Destroy(GameObject.Find("Beam_p(Clone)"));
 			Destroy(GameObject.Find("Beam_r(Clone)"));
 		}
-	}
-	
-	
+	}	
 }
