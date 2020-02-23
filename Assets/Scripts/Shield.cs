@@ -5,7 +5,6 @@ using UnityEngine;
 public class Shield : MonoBehaviour
 {
 	public GameObject Player;
-	//public GameObject shield, shield_b, shield_g, shield_p, shield_r;
 	public GameObject shield;
 	public Sprite shield_b;
     public Sprite shield_g;
@@ -23,6 +22,7 @@ public class Shield : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		
         if (Input.GetKeyDown(KeyCode.Keypad1))
         {
             GetComponent<SpriteRenderer>().sprite = shield_b;

@@ -45,24 +45,24 @@ public class PlayerController : MonoBehaviour
 	
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.tag == "Beam_b")
-		{
-			//Application.LoadLevel("Level_1");
-		}
+		//if(other.tag == "Beam_b")
+		//{
+		//	Application.LoadLevel("Level_1");
+		//}
 		
-		if(other.tag == "Beam_g")
-		{
-			//Application.LoadLevel("Level_1");
-		}
+		//if(other.tag == "Beam_g")
+		//{
+		//	Application.LoadLevel("Level_1");
+		//}
 		
-		if(other.tag == "Beam_p")
-		{
-			//Application.LoadLevel("Level_1");
-		}
+		//if(other.tag == "Beam_p")
+		//{
+		//	Application.LoadLevel("Level_1");
+		//}
 		
-		if(other.tag == "Beam_r")
-		{
-			//Application.LoadLevel("Level_1");
-		}
+		//if(other.tag == "Beam_r")
+		//{
+		//	Application.LoadLevel("Level_1");
+		//}
 	}
 }
