@@ -6,57 +6,61 @@ public class Shield : MonoBehaviour
 {
 	public GameObject Player;
 	public GameObject shield;
-	public Sprite shield_b;
-    public Sprite shield_g;
-	public Sprite shield_p;
-    public Sprite shield_r;
-	
-	private SpriteRenderer spriteRenderer;
+	public GameObject shield_b;
+	public GameObject shield_g;
+	public GameObject shield_p;
+	public GameObject shield_r;
 	
     // Start is called before the first frame update
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>(); // we are accessing the SpriteRenderer that is attached to the Gameobject
+		shield.gameObject.SetActive(true);
+		shield_b.gameObject.SetActive(false);
+		shield_g.gameObject.SetActive(false);
+		shield_p.gameObject.SetActive(false);
+		shield_r.gameObject.SetActive(false);
 	}
 
     // Update is called once per frame
     void Update()
     {
-		
         if (Input.GetKeyDown(KeyCode.Keypad1))
         {
-            GetComponent<SpriteRenderer>().sprite = shield_b;
+            shield_b.gameObject.SetActive(true);
         }
 		if (Input.GetKeyUp(KeyCode.Keypad1))
-        {
-            GetComponent<SpriteRenderer>().sprite = null;
+		{
+            shield_b.gameObject.SetActive(false);
         }
+		
 		
 		if (Input.GetKeyDown(KeyCode.Keypad2))
         {
-            GetComponent<SpriteRenderer>().sprite = shield_g;
-        }
+            shield_g.gameObject.SetActive(true);
+		}
 		if (Input.GetKeyUp(KeyCode.Keypad2))
-        {
-            GetComponent<SpriteRenderer>().sprite = null;
+		{
+            shield_g.gameObject.SetActive(false);
         }
+		
 		
 		if (Input.GetKeyDown(KeyCode.Keypad3))
         {
-            GetComponent<SpriteRenderer>().sprite = shield_p;
+            shield_p.gameObject.SetActive(true);
         }
 		if (Input.GetKeyUp(KeyCode.Keypad3))
-        {
-            GetComponent<SpriteRenderer>().sprite = null;
+		{
+            shield_p.gameObject.SetActive(false);
         }
+		
 		
 		if (Input.GetKeyDown(KeyCode.Keypad4))
         {
-           GetComponent<SpriteRenderer>().sprite = shield_r;
+           shield_r.gameObject.SetActive(true);
         }
 		if (Input.GetKeyUp(KeyCode.Keypad4))
-        {
-            GetComponent<SpriteRenderer>().sprite = null;
+		{
+            shield_r.gameObject.SetActive(false);
         }
     }
 }
