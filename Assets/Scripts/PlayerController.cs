@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
 	public float autoMove;
 	public GameObject player;
 	
+	public LevelManager theLevelManager;
+	
 	private Rigidbody2D body2d;
 	private Animator myAnim;
 
@@ -19,6 +21,8 @@ public class PlayerController : MonoBehaviour
     {
         body2d = GetComponent<Rigidbody2D>();
 		myAnim = GetComponent<Animator>();
+		
+		theLevelManager = FindObjectOfType<LevelManager>();
     }
 
     // Update is called once per frame

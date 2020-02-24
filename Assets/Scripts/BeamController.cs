@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BeamController : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class BeamController : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 screenBounds;
 	public GameObject beam; // This is where you reference the beam you want to destroy
+	
+	public LevelManager theLevelManager;
 	
 	void Start () 
 	{
@@ -34,7 +37,7 @@ public class BeamController : MonoBehaviour
 		}
 		else if (other.tag == "Player")
 		{
-			Application.LoadLevel("Level_1");
+			SceneManager.LoadScene("Level_1");
 		}
 		
 		if(other.tag == "Shield_g")
@@ -43,7 +46,7 @@ public class BeamController : MonoBehaviour
 		}
 		else if (other.tag == "Player")
 		{
-			Application.LoadLevel("Level_1");
+			SceneManager.LoadScene("Level_1");
 		}
 		
 		if(other.tag == "Shield_p")
@@ -52,7 +55,7 @@ public class BeamController : MonoBehaviour
 		}
 		else if (other.tag == "Player")
 		{
-			Application.LoadLevel("Level_1");
+			SceneManager.LoadScene("Level_1");
 		}
 		
 		if(other.tag == "Shield_r")
@@ -61,7 +64,7 @@ public class BeamController : MonoBehaviour
 		}
 		else if (other.tag == "Player")
 		{
-			Application.LoadLevel("Level_1");
+			SceneManager.LoadScene("Level_1");
 		}
 	
 	}	

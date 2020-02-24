@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 6816010193910794500}
   - component: {fileID: -8864567183063820035}
   - component: {fileID: 4982019070112296308}
+  - component: {fileID: 6609825693538121193}
   m_Layer: 0
-  m_Name: Beam_p
+  m_Name: beam_p
   m_TagString: Beam_p
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,6 +49,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -145,3 +147,17 @@ MonoBehaviour:
   speed: 1
   destroyTime: 6
   beam: {fileID: 0}
+  theLevelManager: {fileID: 0}
+--- !u!114 &6609825693538121193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7183734535640481133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3ebbbebf794db94ea7569f98835ca85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1
