@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Score : MonoBehaviour
+public class Score_b : MonoBehaviour
 {
     private LevelManager theLevelManager;
 
@@ -20,29 +20,10 @@ public class Score : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.tag == "Shield_b")
-		{
-			theLevelManager.AddScore(scoreValue);
-
-		}
-		
-		if(other.tag == "Shield_g")
-		{
-			theLevelManager.AddScore(scoreValue);
-
-		}
-		
-		if(other.tag == "Shield_p")
-		{
-			theLevelManager.AddScore(scoreValue);
-
-		}
-		
-		if(other.tag == "Shield_r")
-		{
-			theLevelManager.AddScore(scoreValue);
-
-		}
+		if(other.gameObject.name == "Shield_b")
+        {
+            theLevelManager.AddScore(scoreValue);
+        }
 	}
 }
 

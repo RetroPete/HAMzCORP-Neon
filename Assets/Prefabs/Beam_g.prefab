@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -4447726969461056164}
   - component: {fileID: -3401522067739624326}
   - component: {fileID: -5361602919618581052}
-  - component: {fileID: -9098487640963280360}
+  - component: {fileID: -4870875922404432156}
   m_Layer: 0
   m_Name: Beam_g
   m_TagString: Untagged
@@ -148,7 +148,7 @@ MonoBehaviour:
   destroyTime: 6
   beam: {fileID: 0}
   theLevelManager: {fileID: 0}
---- !u!114 &-9098487640963280360
+--- !u!114 &-4870875922404432156
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1762869249753431477}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3ebbbebf794db94ea7569f98835ca85, type: 3}
+  m_Script: {fileID: 11500000, guid: 012388c3c02b0e34b8387b5102d21cc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreValue: 1
