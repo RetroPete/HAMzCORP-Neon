@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
-	
 	public float waitToRespawn;
 
 	public PlayerController thePlayer;
