@@ -20,25 +20,25 @@ public class Score : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.tag == "beam_b(Clone)")
+		if(other.tag == "Shield_b")
 		{
 			theLevelManager.AddScore(scoreValue);
 
 		}
 		
-		if(other.tag == "beam_g(Clone)")
+		if(other.tag == "Shield_g")
 		{
 			theLevelManager.AddScore(scoreValue);
 
 		}
 		
-		if(other.tag == "beam_p(Clone)")
+		if(other.tag == "Shield_p")
 		{
 			theLevelManager.AddScore(scoreValue);
 
 		}
 		
-		if(other.tag == "beam_r(Clone)")
+		if(other.tag == "Shield_r")
 		{
 			theLevelManager.AddScore(scoreValue);
 

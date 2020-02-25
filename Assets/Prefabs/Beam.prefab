@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -3665701995064842432}
   m_Layer: 0
   m_Name: Beam
-  m_TagString: Beam
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,6 +48,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -145,3 +146,4 @@ MonoBehaviour:
   speed: 1
   destroyTime: 6
   beam: {fileID: 3143458490716249371}
+  theLevelManager: {fileID: 0}

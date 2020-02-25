@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shield : MonoBehaviour
 {
-	public GameObject Player;
+	public GameObject player;
 	public GameObject shield;
 	public GameObject shield_b;
 	public GameObject shield_g;

@@ -23,17 +23,17 @@ public class BeamController : MonoBehaviour
     // Update is called once per frame
     void Update () 
     {
-        Destroy(GameObject.Find("beam_b(Clone)"), destroyTime);
-		Destroy(GameObject.Find("beam_g(Clone)"), destroyTime);		
-		Destroy(GameObject.Find("beam_p(Clone)"), destroyTime);
-		Destroy(GameObject.Find("beam_r(Clone)"), destroyTime);
+        Destroy(GameObject.Find("Beam_b(Clone)"), destroyTime);
+		Destroy(GameObject.Find("Beam_g(Clone)"), destroyTime);		
+		Destroy(GameObject.Find("Beam_p(Clone)"), destroyTime);
+		Destroy(GameObject.Find("Beam_r(Clone)"), destroyTime);
 	}
 	
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if(other.tag == "Shield_b")
 		{
-			Destroy(GameObject.Find("beam_b(Clone)"));
+			Destroy(GameObject.Find("Beam_b(Clone)"));
 		}
 		else if (other.tag == "Player")
 		{
@@ -42,7 +42,7 @@ public class BeamController : MonoBehaviour
 		
 		if(other.tag == "Shield_g")
 		{
-			Destroy(GameObject.Find("beam_g(Clone)"));
+			Destroy(GameObject.Find("Beam_g(Clone)"));
 		}
 		else if (other.tag == "Player")
 		{
@@ -51,7 +51,7 @@ public class BeamController : MonoBehaviour
 		
 		if(other.tag == "Shield_p")
 		{
-			Destroy(GameObject.Find("beam_p(Clone)"));
+			Destroy(GameObject.Find("Beam_p(Clone)"));
 		}
 		else if (other.tag == "Player")
 		{
@@ -60,7 +60,7 @@ public class BeamController : MonoBehaviour
 		
 		if(other.tag == "Shield_r")
 		{
-			Destroy(GameObject.Find("beam_r(Clone)"));
+			Destroy(GameObject.Find("Beam_r(Clone)"));
 		}
 		else if (other.tag == "Player")
 		{
