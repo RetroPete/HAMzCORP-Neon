@@ -8,10 +8,10 @@ public class LevelManager : MonoBehaviour
 	public float waitToRespawn;
 
 	public PlayerController thePlayer;
+	
+	public Text scoreText;
 
 	public int scoreCount;
-
-	public Text scoreText;
 	
 	//public ResetOnRespawn[] objectsToReset;
 
