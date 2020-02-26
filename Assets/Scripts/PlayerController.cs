@@ -6,17 +6,18 @@ public class PlayerController : MonoBehaviour
 {
     float horizontal;
     float vertical;
+	
+	public GameObject player;
 
     public float moveSpeed;
 	public float autoMove;
-	public GameObject player;
 	
 	public LevelManager theLevelManager;
 	
 	private Rigidbody2D body2d;
 	private Animator myAnim;
 
-    // Start is called before the first frame update
+    // Use this for initialization
     void Start()
     {
         body2d = GetComponent<Rigidbody2D>();
@@ -30,10 +31,9 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetAxisRaw("Horizontal")>=0)
 		{
-		horizontal = 0;
-		horizontal = Input.GetAxisRaw("Horizontal");
-	
-        vertical = Input.GetAxisRaw("Vertical");
+			horizontal = 0;
+			horizontal = Input.GetAxisRaw("Horizontal");
+			vertical = Input.GetAxisRaw("Vertical");
 		}
 
         Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);

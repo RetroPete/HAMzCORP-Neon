@@ -17,7 +17,7 @@ public class LevelManager : MonoBehaviour
 
 	public bool respawnCoActive;
 	
-    // Start is called before the first frame update
+    // Use this for initialization
     void Start()
     {
         thePlayer = FindObjectOfType<PlayerController>();

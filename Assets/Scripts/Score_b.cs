@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class Score_b : MonoBehaviour
 {
+	public int scoreValue;
+	
     private LevelManager theLevelManager;
 
-	public int scoreValue;
-
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		theLevelManager = FindObjectOfType<LevelManager>();
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 	
 	}
 

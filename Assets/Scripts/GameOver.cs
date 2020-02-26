@@ -11,12 +11,14 @@ public class GameOver : MonoBehaviour
 	private LevelManager theLevelManager;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		theLevelManager = FindObjectOfType<LevelManager>();
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 	
 	}
 

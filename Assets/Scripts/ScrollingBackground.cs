@@ -11,13 +11,15 @@ public class ScrollingBackground : MonoBehaviour
 
     private Transform cameraTranform;
     private Transform[] layers;
+	
     private float viewZone = 10;
     private float lastCamraX;
+	
     private int leftIndex;
     private int rightIndex;
     
     
-    // Start is called before the first frame update
+    // Use this for initialization
     private void Start()
     {
         cameraTranform = Camera.main.transform;

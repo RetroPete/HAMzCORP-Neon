@@ -5,14 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class BeamController : MonoBehaviour
 {
-	public float speed = 1.0f;
-	public float destroyTime = 6f;
-    private Rigidbody2D rb;
-    private Vector2 screenBounds;
-	public GameObject beam; // This is where you reference the beam you want to destroy
+	public float speed = 1f;
+	public float destroyTime = 8f;
+	
+	public GameObject beam;
 	
 	public LevelManager theLevelManager;
 	
+    private Rigidbody2D rb;
+    private Vector2 screenBounds;
+	
+	// Use this for initialization
 	void Start () 
 	{
         rb = this.GetComponent<Rigidbody2D>();
@@ -66,6 +69,5 @@ public class BeamController : MonoBehaviour
 		{
 			SceneManager.LoadScene("Level_1");
 		}
-	
 	}	
 }

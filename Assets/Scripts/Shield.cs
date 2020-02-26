@@ -11,7 +11,7 @@ public class Shield : MonoBehaviour
 	public GameObject shield_p;
 	public GameObject shield_r;
 	
-    // Start is called before the first frame update
+    // Use this for initialization
     void Start()
     {
 		shield.gameObject.SetActive(true);
@@ -33,7 +33,6 @@ public class Shield : MonoBehaviour
             shield_b.gameObject.SetActive(false);
         }
 		
-		
 		if (Input.GetKeyDown(KeyCode.Keypad2))
         {
             shield_g.gameObject.SetActive(true);
@@ -43,7 +42,6 @@ public class Shield : MonoBehaviour
             shield_g.gameObject.SetActive(false);
         }
 		
-		
 		if (Input.GetKeyDown(KeyCode.Keypad3))
         {
             shield_p.gameObject.SetActive(true);
@@ -52,7 +50,6 @@ public class Shield : MonoBehaviour
 		{
             shield_p.gameObject.SetActive(false);
         }
-		
 		
 		if (Input.GetKeyDown(KeyCode.Keypad4))
         {
