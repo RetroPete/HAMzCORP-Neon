@@ -36,7 +36,7 @@ public class BeamController : MonoBehaviour
 	{
 		if(other.tag == "Shield_b")
 		{
-			Destroy(GameObject.Find("Beam_b(Clone)"));
+			Destroy(GameObject.Find("beam_b(Clone)"));
 		}
 		else if (other.tag == "Player")
 		{
@@ -45,7 +45,7 @@ public class BeamController : MonoBehaviour
 		
 		if(other.tag == "Shield_g")
 		{
-			Destroy(GameObject.Find("Beam_g(Clone)"));
+			Destroy(GameObject.Find("beam_g(Clone)"));
 		}
 		else if (other.tag == "Player")
 		{
@@ -54,7 +54,7 @@ public class BeamController : MonoBehaviour
 		
 		if(other.tag == "Shield_p")
 		{
-			Destroy(GameObject.Find("Beam_p(Clone)"));
+			Destroy(GameObject.Find("beam_p(Clone)"));
 		}
 		else if (other.tag == "Player")
 		{
@@ -63,7 +63,7 @@ public class BeamController : MonoBehaviour
 		
 		if(other.tag == "Shield_r")
 		{
-			Destroy(GameObject.Find("Beam_r(Clone)"));
+			Destroy(GameObject.Find("beam_r(Clone)"));
 		}
 		else if (other.tag == "Player")
 		{
