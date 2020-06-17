@@ -49,6 +49,6 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        rbody2D.velocity = new Vector2(autoMove + horizontal * moveSpeed, vertical * 3f);
+        rbody2D.velocity = new Vector2(autoMove + horizontal * moveSpeed, vertical * autoMove);
     }
 }

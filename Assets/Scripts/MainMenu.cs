@@ -25,11 +25,6 @@ public class MainMenu : MonoBehaviour
 		PlayerPrefs.SetInt("ScoreCount", 0);
 	}
 
-	public void Continue()
-	{
-		SceneManager.LoadScene("Level_1");
-	}
-
 	public void QuitGame()
 	{
 		Application.Quit();
